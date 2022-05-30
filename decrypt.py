@@ -21,7 +21,7 @@ def decrypt(input_path):
     else:
         fname = file_split[0]
         ext = '.' + file_split[1]
-    output_path = os.path.join(path, fname + '_decrypt' + ext)
+    output_path = os.path.join(path, '_DECRYPT_' + fname + ext)
     if not valid(input_path):
         print('[x] Not an encrypted file: {}'.format(input_path))
         return
